@@ -1,5 +1,6 @@
 import os
 import re
+import json
 import speech_recognition as sr
 import argparse
 
@@ -9,7 +10,7 @@ parser.add_argument('language', type=str, help='language code for speech recogni
 args = parser.parse_args()
 
 input_file_format = ".wav"
-output_file = os.path.join(args.input_dir,"text_detected.txt")
+output_json_file = os.path.join(args.input_dir,"text_detected.json")
 
 def atoi(text):
     return int(text) if text.isdigit() else text
@@ -23,23 +24,22 @@ for file in os.listdir(args.input_dir):
 
 all_audio_chunks.sort(key=natural_keys)
 
-output_text_array = []
+output_text_dict = {}
 
 speech_recognizer = sr.Recognizer()
 
 for file in all_audio_chunks:
     with sr.AudioFile(os.path.join(args.input_dir,file)) as source:
         text = speech_recognizer.listen(source)
+        time_stamp = os.path.splitext(file)[0].split("_")[1]
     try:
         text_output = speech_recognizer.recognize_google(text,language=args.language) 
         print("Speech to text ...{}".format(file))
-        output_text_array.append(text_output)
+        output_text_dict[time_stamp] = text_output
     except:
-        output_text_array.append(" ")
-        continue
+        output_text_dict[time_stamp] = " "
 
-with open(output_file, 'w') as f:
-    for text in output_text_array:
-        f.write("%s\n" % text)
+with open(output_json_file, 'w', encoding='utf8') as f:
+    json.dump(output_text_dict, f, ensure_ascii=False)
 
 
