@@ -1,0 +1,8 @@
+2021-06-08 12:55:00,211-INFO- Authentication successful 
+
+2021-06-08 12:55:00,237-INFO-Processing file /home/sujit27/projects/audio-to-text/testing_bn/transcription/pdfs/writereaddata_Bulletins_Text_Regional_2021_Jun_bn.pdf
+2021-06-08 12:55:02,087-INFO-writereaddata_Bulletins_Text_Regional_2021_Jun_bn upload response : {'data': '3e19c7b3-7b1c-4b2b-bf65-fbf5a02175ac.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-08 12:55:02,089-INFO-Language detected bn
+2021-06-08 12:55:02,089-INFO-OCR and Toeknization statred  for writereaddata_Bulletins_Text_Regional_2021_Jun_bn
+2021-06-08 12:55:03,639-INFO-process started for file  writereaddata_Bulletins_Text_Regional_2021_Jun_bn with job id A_FWLBOD15GOT-UhOyH-1623137102903
+2021-06-08 13:09:39,680-INFO-file writereaddata_Bulletins_Text_Regional_2021_Jun_bn successfully processed 

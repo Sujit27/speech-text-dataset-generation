@@ -1,0 +1,32 @@
+# coding: utf-8
+from audio2numpy import open_audio
+from pydub import AudioSegment
+import matplotlib.pyplot as plt
+from scipy.signal import fftconvolve
+import numpy as np
+bulletin_signal, bulletin_sampling_rate = open_audio("testing/bulletin_hi.mp3")
+corr = fftconvolve(bulletin_signal,bulletin_signal[11069100:11135250],mode='same')
+plt.plot(corr)
+plt.show()
+corr = fftconvolve(bulletin_signal[11000000:12000000],bulletin_signal[11069100:11135250],mode='same')
+plt.show()
+plt.plot(corr)
+plt.show()
+from gtts import gTTS
+mytext = "कोविड को देखते हुए श्रोताओं से अपील है किकोई भी लापरवाही न बरतें ।"
+language = 'hi'
+output_file = "sample_hi_4.mp3"
+myobj = gTTS(text=mytext, lang=language, slow=False)
+myobj.save(output_file)
+sample_signal, sample_sampling_rate = open_audio("testing/sample_hi.mp3")
+from scipy import signal
+sample_signal = signal.resample(sample_signal,22050)
+corr = fftconvolve(bulletin_signal,sample_signal,mode='same')
+plt.plot(corr)
+plt.show()
+plt.title("fftconvolve-of-synthesized-sample-over-bulletin")
+plt.show()
+plt.ion()
+plt.plot(corr)
+plt.title("fftconvolve-of-synthesized-sample-over-bulletin")
+%save -r testing-session 1-200

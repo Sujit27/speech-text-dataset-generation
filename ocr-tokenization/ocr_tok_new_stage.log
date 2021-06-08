@@ -1,0 +1,45 @@
+2021-06-04 14:03:02,830-INFO- Authentication successful 
+
+2021-06-04 14:10:38,164-INFO- Authentication successful 
+
+2021-06-04 14:15:32,373-INFO- Authentication successful 
+
+2021-06-04 14:16:42,635-INFO- Authentication successful 
+
+2021-06-04 14:19:51,666-INFO- Authentication successful 
+
+2021-06-04 14:19:51,670-INFO-Processing file /home/sujit27/Desktop/sample_docs/pdfs/sample_doc_2.pdf
+2021-06-04 14:19:56,999-INFO-sample_doc_2 upload response : {'data': '169179ff-e78b-41f3-9245-ab48a60db7c3.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:19:56,999-INFO-Language detected 2
+2021-06-04 14:19:57,000-ERROR-Invalid laguage code 2 for file sample_doc_2
+2021-06-04 14:19:57,000-INFO-Processing file /home/sujit27/Desktop/sample_docs/pdfs/sample_eng.pdf
+2021-06-04 14:20:03,135-INFO-sample_eng upload response : {'data': '3cd1c738-0a91-4909-ab83-7a920d9cf736.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:20:03,136-INFO-Language detected eng
+2021-06-04 14:20:03,136-ERROR-Invalid laguage code eng for file sample_eng
+2021-06-04 14:20:03,136-INFO-Processing file /home/sujit27/Desktop/sample_docs/pdfs/sample_doc_1.pdf
+2021-06-04 14:20:09,592-INFO-sample_doc_1 upload response : {'data': '54cffe5f-31cc-40d4-9a44-20a3845f4801.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:20:09,593-INFO-Language detected 1
+2021-06-04 14:20:09,594-ERROR-Invalid laguage code 1 for file sample_doc_1
+2021-06-04 14:20:09,594-INFO-Processing file /home/sujit27/Desktop/sample_docs/pdfs/1ec6e0c7-820e-4b40-8628-475424f461bc (1).pdf
+2021-06-04 14:20:14,214-INFO-1ec6e0c7-820e-4b40-8628-475424f461bc (1) upload response : {'data': '9e5784bf-1411-47b7-b7b6-e9138268041c.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:20:14,215-INFO-Language detected 1ec6e0c7-820e-4b40-8628-475424f461bc (1)
+2021-06-04 14:20:14,215-ERROR-Invalid laguage code 1ec6e0c7-820e-4b40-8628-475424f461bc (1) for file 1ec6e0c7-820e-4b40-8628-475424f461bc (1)
+2021-06-04 14:20:14,216-INFO-Processing file /home/sujit27/Desktop/sample_docs/pdfs/sample_bn.pdf
+2021-06-04 14:20:17,376-INFO-sample_bn upload response : {'data': '388b78a9-4cf7-4b6f-bfec-d68f0c99f279.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:20:17,377-INFO-Language detected bn
+2021-06-04 14:20:17,378-INFO-OCR and Toeknization statred  for sample_bn
+2021-06-04 14:20:18,780-INFO-process started for file  sample_bn with job id A_FWLBOD15GOT-fxICM-1622796618295
+2021-06-04 14:30:08,559-INFO- Authentication successful 
+
+2021-06-04 14:30:08,577-INFO-Processing file /home/sujit27/projects/audio-to-text/hindi/test0/pdf/writereaddata_Bulletins_Text_Regional_2021_Jun_Regional-Lucknow-Hindi-1920-1930-202161223012.pdf
+2021-06-04 14:30:13,885-INFO-writereaddata_Bulletins_Text_Regional_2021_Jun_Regional-Lucknow-Hindi-1920-1930-202161223012 upload response : {'data': 'bbfa35fa-5508-43c9-918e-f09ef05547d5.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:30:13,886-INFO-Language detected Regional-Lucknow-Hindi-1920-1930-202161223012
+2021-06-04 14:30:13,887-ERROR-Invalid laguage code Regional-Lucknow-Hindi-1920-1930-202161223012 for file writereaddata_Bulletins_Text_Regional_2021_Jun_Regional-Lucknow-Hindi-1920-1930-202161223012
+2021-06-04 14:34:58,257-INFO- Authentication successful 
+
+2021-06-04 14:34:58,275-INFO-Processing file /home/sujit27/projects/audio-to-text/hindi/test0/pdf/writereaddata_Bulletins_Text_Regional_2021_Jun_hi.pdf
+2021-06-04 14:35:04,198-INFO-writereaddata_Bulletins_Text_Regional_2021_Jun_hi upload response : {'data': '055bc989-c1f4-442c-b58b-bbbab5b6ed20.pdf', 'http': {'status': 200}, 'ok': True, 'why': 'request successful'}
+2021-06-04 14:35:04,200-INFO-Language detected hi
+2021-06-04 14:35:04,200-INFO-OCR and Toeknization statred  for writereaddata_Bulletins_Text_Regional_2021_Jun_hi
+2021-06-04 14:35:05,628-INFO-process started for file  writereaddata_Bulletins_Text_Regional_2021_Jun_hi with job id A_FWLBOD15GOT-UMOJI-1622797505019
+2021-06-04 14:44:05,777-INFO-file writereaddata_Bulletins_Text_Regional_2021_Jun_hi successfully processed 
