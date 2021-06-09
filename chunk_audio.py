@@ -31,10 +31,3 @@ audio_regions = auditok.split(
 for i, r in enumerate(audio_regions):
     filename = r.save(os.path.join(output_path,"region_{meta.start:.3f}-{meta.end:.3f}.wav"))
     print("region saved as: {}".format(filename))
-# for i, chunk in enumerate(chunks):
-#     print("Segmenting file...chunk{}.wav".format(i))
-#     chunk.export(os.path.join(output_path, "chunk{0}.wav".format(i)), format="wav")
-
-# with open(os.path.join(output_path,"metadata.txt"), 'w') as f:
-#     for item in silences:
-#         f.write("%s\n" % item)

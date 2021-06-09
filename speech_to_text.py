@@ -24,22 +24,24 @@ for file in os.listdir(args.input_dir):
 
 all_audio_chunks.sort(key=natural_keys)
 
-output_text_dict = {}
+output_text_list = []
 
 speech_recognizer = sr.Recognizer()
 
 for file in all_audio_chunks:
     with sr.AudioFile(os.path.join(args.input_dir,file)) as source:
         text = speech_recognizer.listen(source)
-        time_stamp = os.path.splitext(file)[0].split("_")[1]
+        time_start = os.path.splitext(file)[0].split("_")[1].split("-")[0]
+        time_end = os.path.splitext(file)[0].split("_")[1].split("-")[1]
     try:
         text_output = speech_recognizer.recognize_google(text,language=args.language) 
-        print("Speech to text ...{}".format(file))
-        output_text_dict[time_stamp] = text_output
+        print("Speech to text ...{}".format(file))       
     except:
-        output_text_dict[time_stamp] = " "
+        text_output = " "
+    
+    output_text_list.append({'time_start':time_start,'time_end':time_end,'text':text_output})
 
 with open(output_json_file, 'w', encoding='utf8') as f:
-    json.dump(output_text_dict, f, ensure_ascii=False)
+    json.dump(output_text_list, f, ensure_ascii=False)
 
 
