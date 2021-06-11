@@ -7,12 +7,12 @@ from gtts import gTTS
 import os
   
 # The text that you want to convert to audio
-mytext = 'फिर भीयदि कोई बीमारी की चपेट में आता है तोवह समुचित उपचार का हकदार है, सरकार इस दिशा में सभी कदम उठा रहीहै।'
+mytext = 'आज विश्व दुग्ध दिवस भीहै।'
   
 # Language in which you want to convert
 language = 'hi'
 
-output_file = "testing/sample_hi_3.mp3"
+output_file = "testing/sample_hi_4.mp3"
   
 # Passing the text and language to the engine, 
 # here we have marked slow=False. Which tells 
